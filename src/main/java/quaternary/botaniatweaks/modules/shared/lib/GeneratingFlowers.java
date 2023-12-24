@@ -2,7 +2,6 @@ package quaternary.botaniatweaks.modules.shared.lib;
 
 import net.minecraftforge.fml.common.Loader;
 import quaternary.botaniatweaks.BotaniaTweaks;
-import sun.reflect.Reflection;
 
 import java.util.*;
 
@@ -95,10 +94,6 @@ public final class GeneratingFlowers {
 		
 		public void markPresent() {
 			isPresent = true;
-		}
-		
-		static {
-			Reflection.registerFieldsToFilter(GeneratingFlowers.FlowerData.class, "isPassive");
 		}
 	}
 	
