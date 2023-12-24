@@ -1,7 +1,6 @@
 package quaternary.botaniatweaks.modules.shared.lib;
 
 import com.google.common.collect.ForwardingMap;
-import sun.reflect.Reflection;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,10 +16,6 @@ public final class NiceTryMap extends ForwardingMap<String, Integer> {
 			return super.put(key, value);
 		}
 	};
-	
-	static {
-		Reflection.registerFieldsToFilter(NiceTryMap.class, "backing");
-	}
 	
 	@Override
 	protected final Map<String, Integer> delegate() {
