@@ -8,7 +8,6 @@ import quaternary.botaniatweaks.asm.BotaniaTweakerHooks;
 import quaternary.botaniatweaks.modules.shared.config.BotaniaTweaksConfig;
 import quaternary.botaniatweaks.modules.shared.lib.GeneratingFlowers;
 import quaternary.botaniatweaks.modules.shared.lib.NiceTryMap;
-import sun.reflect.Reflection;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -23,10 +22,6 @@ public class BotaniaConfig {
 	
 	public static final NiceTryMap DECAY_TIMES = new NiceTryMap();
 	public static boolean FLOWER_DURABILITY = false;
-	static {
-		//Hello Bord, hope you're well :)
-		Reflection.registerFieldsToFilter(BotaniaConfig.class, "DECAY_TIMES");
-	}
 	
 	public static float MANASTORM_SCALE_FACTOR;
 	
